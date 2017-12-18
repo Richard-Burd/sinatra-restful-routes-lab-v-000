@@ -1,13 +1,13 @@
 # remember that in order to create a migration, you gotta start all this out with this command:
-
 # bundle exec rake db:create_migration NAME=create_recipes
 
-=begin
+# after that you have to migrate this stuff with the following command:
+# bundle exec rake db:migrate SINATRA_ENV=test
+
+
+# Now here's some seed data if you need it:
+
 Recipe.create(name: "Cookies", ingredients: "sugar, flour, water", cook_time: 25)
+Recipe.create(name: "Tofu", ingredients: "Sesame Oil, Teryaki Sauce, Sugar", cook_time: 42)
+Recipe.create(name: "Matzah", ingredients: "Whole weat flour, salt, water", cook_time: 26)
 
-=end
-
-
-#//////////////////////////////////////////////
-
-# bundle exec rake db:create_migration NAME=create_recipes
