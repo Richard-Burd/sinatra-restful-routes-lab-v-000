@@ -10,4 +10,3 @@
 Recipe.create(name: "Cookies", ingredients: "sugar, flour, water", cook_time: 25)
 Recipe.create(name: "Tofu", ingredients: "Sesame Oil, Teryaki Sauce, Sugar", cook_time: 42)
 Recipe.create(name: "Matzah", ingredients: "Whole weat flour, salt, water", cook_time: 26)
-
