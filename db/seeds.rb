@@ -11,3 +11,5 @@ Pirate.create(name: "CPT Sparrow", height: "short", weight: "light")
 
 
 #//////////////////////////////////////////////
+
+# bundle exec rake db:create_migration NAME=create_recipes
