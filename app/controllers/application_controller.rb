@@ -54,6 +54,8 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/recipes/:id/delete' do #loads edit form
-    "Hey There!"
+    @recipe = Recipe.find_by_id(params[:id])
+    @recipe.delete
+    redirect to '/recipes'
   end
 end
