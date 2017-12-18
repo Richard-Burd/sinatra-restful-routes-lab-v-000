@@ -7,7 +7,7 @@ class CreateRecipes < ActiveRecord::Migration
     end
   end
 
-  def down 
-    drop_table :dogs 
-  end 
+  def down
+    drop_table :dogs
+  end
 end
