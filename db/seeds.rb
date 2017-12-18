@@ -14,4 +14,5 @@ Recipe.create(name: "Matzah", ingredients: "Whole weat flour, salt, water", cook
 # It appears that making the cook_time an integer may have been a mistake; now let's make it
 # a string instead!
 
-# 
+# change_column(table_name, column_name, type, options = {}) public
+# change_column(:recipes, :cook_time, :string)
