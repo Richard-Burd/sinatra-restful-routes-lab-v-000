@@ -4,4 +4,11 @@
   Ingredients: <%= recipe.ingredients %>
   Cook time <%= recipe.cook_time %>
   </p>
+  <p>
+  <form method="post" action="/recipes/<%=@recipe.id%>/edit">
+      <input id="hidden" type="hidden" name="_method" value="edit">
+
+    <input type="submit" value="edit">
+  </form>
+  </p>
 <% end %>
