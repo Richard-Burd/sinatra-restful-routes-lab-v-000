@@ -7,9 +7,9 @@
 
 # Now here's some seed data if you need it:
 
-Recipe.create(name: "Cookies", ingredients: "sugar, flour, water", cook_time: 25)
-Recipe.create(name: "Tofu", ingredients: "Sesame Oil, Teryaki Sauce, Sugar", cook_time: 42)
-Recipe.create(name: "Matzah", ingredients: "Whole weat flour, salt, water", cook_time: 26)
+Recipe.create(name: "Cookies", ingredients: "sugar, flour, water", cook_time: '25')
+Recipe.create(name: "Tofu", ingredients: "Sesame Oil, Teryaki Sauce, Sugar", cook_time: '42')
+Recipe.create(name: "Matzah", ingredients: "Whole weat flour, salt, water", cook_time: '26')
 
 # It appears that making the cook_time an integer may have been a mistake; now let's make it
 # a string instead!
