@@ -8,6 +8,6 @@ class CreateRecipes < ActiveRecord::Migration
   end
 
   def down
-    drop_table :dogs
+    drop_table :recipes
   end
 end
