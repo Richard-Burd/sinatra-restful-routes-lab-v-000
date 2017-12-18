@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
 
   get '/recipes/:id/edit' do #loads edit form
     @recipe = Recipe.find_by_id(params[:id])
-    erb :show
+    erb :edit
   end
 
   patch '/recipes/:id' do  #updates a recipe
@@ -37,25 +37,11 @@ class ApplicationController < Sinatra::Base
     redirect to "/recipes/#{@recipe.id}"
   end
 
-  post '/recipes/:id/edit' do #loads edit form
-    @recipe = Recipe.find_by_id(params[:id])
-    erb :edit
-  end
-
-  post '/recipes/:id' do #loads edit form
-    @recipe = Recipe.find_by_id(params[:id])
-    erb :edit
-  end
-
   delete '/recipes/:id/delete' do #delete action
-    @recipe = Recipe.find_by_id(params[:id])
-    @recipe.delete
-    redirect to '/recipes'
-  end
+  @recipe = Recipe.find_by_id(params[:id])
+  @recipe.delete
+  redirect to '/recipes'
+end
 
-  post '/recipes/:id/delete' do #loads edit form
-    @recipe = Recipe.find_by_id(params[:id])
-    @recipe.delete
-    redirect to '/recipes'
-  end
+
 end
