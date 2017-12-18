@@ -13,3 +13,11 @@ Cook time <%= @recipe.cook_time %>
 
   <input type="submit" value="edit">
 </form>
+
+<p>
+<form method="get" action="/recipes">
+    <input id="hidden" type="hidden" name="_method" value="edit">
+
+  <input type="submit" value="View all recipes">
+</form>
+</p>
